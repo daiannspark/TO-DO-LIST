@@ -1,18 +1,18 @@
-body {
-  width: 80%;
-  margin: 0 auto;
-  min-width: 250px;
-}
-
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-image: url("../galaxy.jpg");
+  width: 60%;
+  margin: 100px auto;
+  min-width: 250px;
 }
 
 ul {
   margin: 0;
   padding: 0;
 }
-
 ul li {
   cursor: pointer;
   position: relative;
@@ -21,30 +21,24 @@ ul li {
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 ul li:nth-child(odd) {
   background: #f9f9f9;
 }
-
 ul li:hover {
   background: #ddd;
 }
 
 ul li .checked {
-  background: #888;
-  color: #fff;
+  color: darkslategrey;
   text-decoration: line-through;
 }
 
 ul li .checked::before {
   content: "";
   position: absolute;
-  border-color: #fff;
+  border-color: darkslategrey;
   border-style: solid;
   border-width: 0 2px 2px 0;
   top: 10px;
@@ -54,35 +48,36 @@ ul li .checked::before {
   width: 7px;
 }
 
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0 25px 0;
+}
+
+#myDIV {
+  height: 175px;
+}
+
 .close {
   position: absolute;
   right: 0;
   top: 0;
   padding: 12px 16px 12px 16px;
 }
-
 .close:hover {
   background-color: #555554;
   color: white;
 }
 
 .header {
-  background-color: #555;
-  padding: 30px 40px;
+  background-image: linear-gradient(rgba(0, 0, 139, 0.7), rgba(238, 130, 238, 0.7));
+  padding: 40px 40px 0 40px;
   color: white;
   text-align: center;
 }
 
-.header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 input {
-  margin: 0;
-  border: none;
-  border-radius: 0;
+  border: darkblue 1px solid;
+  border-radius: 3px;
   width: 75%;
   padding: 10px;
   float: left;
@@ -90,18 +85,20 @@ input {
 }
 
 .addBtn {
-  padding: 10px;
-  width: 25%;
-  background: #d9d9d9;
-  color: #555;
+  margin-left: 10px;
+  padding: 9px;
+  width: 24%;
+  background: lightgrey;
+  color: darkblue;
   float: left;
   text-align: center;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
-  border-radius: 0;
+  border: darkblue 1px solid;
+  border-radius: 3px;
 }
-
 .addBtn:hover {
   background-color: #bbb;
 }
