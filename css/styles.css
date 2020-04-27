@@ -53,10 +53,6 @@ h2 {
   margin: 10px 0 25px 0;
 }
 
-#myDIV {
-  height: 175px;
-}
-
 .close {
   position: absolute;
   right: 0;
@@ -69,13 +65,14 @@ h2 {
 }
 
 .header {
+  height: 175px;
   background-image: linear-gradient(rgba(0, 0, 139, 0.7), rgba(238, 130, 238, 0.7));
   padding: 40px 40px 0 40px;
   color: white;
   text-align: center;
 }
 
-input {
+#myInput {
   border: darkblue 1px solid;
   border-radius: 3px;
   width: 75%;
@@ -86,7 +83,7 @@ input {
 
 .addBtn {
   margin-left: 10px;
-  padding: 9px;
+  padding: 10px;
   width: 24%;
   background: lightgrey;
   color: darkblue;
@@ -101,6 +98,38 @@ input {
 }
 .addBtn:hover {
   background-color: #bbb;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1798px) {
+  #myInput {
+    width: 75%;
+  }
+
+  .addBtn {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #myInput {
+    width: 75%;
+  }
+
+  .addBtn {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 40px 20px 0 20px;
+  }
+
+  #myInput {
+    width: 70%;
+  }
+
+  .addBtn {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
